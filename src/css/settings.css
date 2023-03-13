@@ -3,6 +3,16 @@
   /* Colors */
   --black-color: #1f1717;
   --white-color: #f0f0f5;
+  --darkBlue-color: #060064;
+  --blue-color: #0000FE;
+  --yellow-color: rgb(255, 222, 0);
+  --darkRed-color: #93051D;
+  --purple-color: #4D005E;
+  --orange-color: #FD4B01;
+  --cyan-color: #055E6C;
+  --green-color: #709756;
+  --pink-color: #C21656;
+  --brown-color: #844531;
   
   /* Font-Size */
   --font-size-12: 12px;

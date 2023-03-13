@@ -1,0 +1,36 @@
+body {
+    background-color: var(--darkBlue-color) !important;
+}
+
+body,
+.menu-start {
+    height: 100vh;
+    width: 100vw;
+}
+
+.menu-start {
+    background: url(../img/menu.jpg), #ffde00;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.menu-start button {
+    position: absolute;
+    bottom: 10vh;
+    right: 25vw;
+    border: 10px solid #0000FE;
+    border-radius: 15px;
+    background-color: #ffde00;
+    color: #C21656;
+    font-size: var(--font-size-24);
+    font-weight: bold;
+    padding: 1rem 5rem;
+}
+
+.menu-start button:hover {
+    /*background-color: #FDA209;*/
+    background-color: #C21656;
+    color: #ffde00;
+}
