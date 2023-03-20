@@ -1,11 +1,12 @@
-body {
-    background-color: var(--darkBlue-color) !important;
-}
-
 body,
 .menu-start {
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
+}
+
+body {
+    background-color: #060064 !important;
 }
 
 .menu-start {
@@ -21,7 +22,7 @@ body,
     bottom: 10vh;
     right: 25vw;
     border: 10px solid #0000FE;
-    border-radius: 15px;
+    border-radius: .375rem;
     background-color: #ffde00;
     color: #C21656;
     font-size: var(--font-size-24);
@@ -29,8 +30,95 @@ body,
     padding: 1rem 5rem;
 }
 
-.menu-start button:hover {
-    /*background-color: #FDA209;*/
+.enabled:hover,
+.endscreen button:hover,
+.menu-start button:hover
+ {
     background-color: #C21656;
     color: #ffde00;
+}
+
+.main-card {
+    width: 58rem;
+    background-color: #ffde00 !important;
+    border: none !important;
+    position: relative;
+}
+
+h5 {
+    font-size: 1.8rem !important;
+    text-align: center;
+    margin-bottom: 2rem !important;
+    margin-top: 1rem !important;
+}
+
+.answers {
+    gap: 1rem;
+}
+
+.answer {
+    width: 49%;
+    font-weight: bold;
+    background-color: var(--white-color);
+}
+
+.answer:hover {
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--darkBlue-color);
+}
+
+.question-footer {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 0;
+}
+
+.endscreen button,
+.question-footer button {
+    border: 3px solid #0000FE;
+    border-radius: .375rem;
+    background-color: #ffde00;
+    color: #C21656;
+    font-weight: bold;
+    padding: .5rem 1rem;
+}
+
+.endscreen button {
+    width: fit-content;
+    margin-top: 1.6rem;
+    font-size: var(--font-size-16);
+}
+
+.endscreen {
+    padding: 1rem;
+    align-items: center;
+}
+
+.endscreen h5 {
+    font-size: var(--font-size-32) !important;
+    font-weight: bold;
+}
+
+.endscreen div {
+    text-align: center;
+    font-size: var(--font-size-16);
+}
+
+#result {
+    position: absolute;
+    top: 11rem;
+    right: 30%;
+    width: 20rem;
+    transform: scale(0);
+}
+
+.progress {
+    height: 2rem !important;
+    font-size: 1.5rem !important;
+    border-radius: 0 !important;
+}
+
+.card-body {
+    position: relative;;
 }

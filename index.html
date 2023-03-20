@@ -16,17 +16,42 @@
     <title>Quizapp</title>
 </head>
 
-<body class="grid">
-    <div class="menu-start" onclick="openQuiz()">
-        <button>Start</button>
+<body class="grid" onload="init();">
+    <div class="menu-start box-shadow">
+        <button onclick="openQuiz()">Start</button>
     </div>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+    <div class="card main-card box-shadow d-none">
+        <img src="./src/img/question.jpg" class="card-img-top">
+        <img id="result" src="./src/img/gold.png">
+        <div class="progress" role="progressbar">
+            <div class="progress-bar" style="width: 0%"></div>
+        </div>
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 id="question-text" class="card-title"></h5>
+            <div class="answers box-shadow flex-wrap">
+                <div class="card answer" onclick="answer('answer_1')">
+                    <div id="answer_1" class="card-body"></div>
+                </div>
+                <div class="card box-shadow answer" onclick="answer('answer_2')">
+                    <div id="answer_2" class="card-body"></div>
+                </div>
+                <div class="card box-shadow answer" onclick="answer('answer_3')">
+                    <div id="answer_3" class="card-body"></div>
+                </div>
+                <div class="card box-shadow answer" onclick="answer('answer_4')">
+                    <div id="answer_4" class="card-body"></div>
+                </div>
+            </div>
+            <div class="question-footer flex-row">
+                <div><b id="current-question"></b> von <b class="questions-amount"></b> Fragen</div>
+                <button disabled onclick="nextQuestion()">Nächste Frage</button>
+            </div>
+        </div>
+        <div class="endscreen flex-column d-none">
+            <h5 class="card-title">Quiz beendet</h5>
+            <div>Du hast <b id="right_answers"></b> von <b class="questions-amount"></b> Fragen richtig beantwortet.
+            </div>
+            <button onclick="restart()">Erneut spielen</button>
         </div>
     </div>
     <script src="./src/js/script.js"></script>

@@ -1,0 +1,53 @@
+@media (max-width: 1070.4px) {
+    .menu-start {
+        background-size: cover;
+        background-position: bottom;
+    }
+    .menu-start button {
+        bottom: 5vh;
+        right: 5vw;
+        font-size: var(--font-size-18);
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-start {
+        display: none;
+    }
+    .main-card {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+@media (max-width: 520px) {
+    .answers {
+        flex-direction: column;
+    }
+    .answer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    #result {
+        top: 9rem;
+        right: 30%;
+        width: 18rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #result {
+        top: 7rem;
+        right: 27%;
+        width: 16rem;
+    }
+}
+
+@media (max-width: 320px) {
+    #result {
+        top: 6rem;
+        width: 12rem;
+    }
+}

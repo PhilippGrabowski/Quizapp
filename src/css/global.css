@@ -47,3 +47,13 @@ html, body {
 .d-none {
     display: none;
 }
+
+.bg-success,
+.bg-danger {
+    color: var(--white-color);
+}
+
+.transition {
+    transition: all 4s ease-in;
+    transform: scale(1) !important;
+}
